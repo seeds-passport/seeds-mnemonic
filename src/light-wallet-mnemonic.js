@@ -1,4 +1,4 @@
-const ecc = require("eosjs-ecc");
+import ecc from "eosjs-ecc";
 
 /**
  * LightWalletMnemonic - Class for generating keys based on LightWallet compatible mnemonics
@@ -28,4 +28,4 @@ class LightWalletMnemonic {
   }
 }
 
-module.exports = LightWalletMnemonic;
+export default LightWalletMnemonic;

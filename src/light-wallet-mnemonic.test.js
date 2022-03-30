@@ -1,4 +1,4 @@
-const LightWalletMnemonic = require("./light-wallet-mnemonic");
+import LightWalletMnemonic from "./light-wallet-mnemonic";
 const lwInstance = new LightWalletMnemonic();
 
 const accountName = "alekslw11111";

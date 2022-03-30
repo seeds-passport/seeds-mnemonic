@@ -1,4 +1,4 @@
-const SEEDSPassportMnemonic = require("./passport-mnemonic");
+import SEEDSPassportMnemonic from "./passport-mnemonic";
 const spmInstance = new SEEDSPassportMnemonic();
 
 const mnemonic =

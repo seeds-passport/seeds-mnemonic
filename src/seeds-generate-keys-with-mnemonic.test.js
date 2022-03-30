@@ -1,4 +1,4 @@
-const SeedsMnemonic = require("./main");
+import SeedsMnemonic from "./main";
 
 const mnemonicLW =
   "box coach sail improve crush chief sight license craft powder give mandate";
@@ -16,12 +16,10 @@ const expectedPublicKeyPassport =
 
 test("Generates appropriate keys based on Passport mnemonic", () => {
   const seedsInstance = new SeedsMnemonic((val) => {
-    console.log("MNEMONICS checked true: ", val);
     return val === expectedPublicKeyPassport;
   });
 
   const eosKeys = seedsInstance.generateKeysFromMnemonic(mnemonicPassport);
-  console.log("KEYS: ", eosKeys);
   expect(eosKeys.publicKey).toBe(expectedPublicKeyPassport);
 });
 

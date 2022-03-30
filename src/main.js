@@ -1,5 +1,5 @@
-const PassportMnemonicClass = require("../passport-mnemonic");
-const LightWalletMnemonicClass = require("./light-wallet-mnemonic");
+import PassportMnemonicClass from "./passport-mnemonic";
+import LightWalletMnemonicClass from "./light-wallet-mnemonic";
 
 const DEFAULT_MNEMONIC_HANDLERS = [
   new PassportMnemonicClass(),
@@ -59,4 +59,4 @@ class SeedsMnemonic {
   }
 }
 
-module.exports = SeedsMnemonic;
+export default SeedsMnemonic;

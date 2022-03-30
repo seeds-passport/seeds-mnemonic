@@ -1,8 +1,10 @@
-const bip39 = require("bip39");
-const { hdkey } = require("ethereumjs-wallet");
-const buffer = require("buffer");
-const eth = require("ethereumjs-util");
-const ecc = require("eosjs-ecc");
+import bip39 from "bip39";
+import Wallet from "ethereumjs-wallet";
+import buffer from "buffer";
+import eth from "ethereumjs-util";
+import ecc from "eosjs-ecc";
+
+const { hdkey } = Wallet;
 
 /**
  * PassportMnemonic - Class for generating keys based on Passport compatible mnemonics
@@ -66,4 +68,4 @@ class PassportMnemonic {
   }
 }
 
-module.exports = PassportMnemonic;
+export default PassportMnemonic;
